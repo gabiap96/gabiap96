@@ -1,0 +1,62 @@
+```
+update: 22.03.2020
+DONE:
+-> UI/UX (gabi) 
+    -> Introducerea pe toata pagina - abandonat
+    -> Meniu de scroll down - abanonat
+    -> Sections separate pe o pagina  - done
+    -> Introdus pozele pentru sectiuni - done
+    -> Comentariile pe pagina separata cu instructiuniile de colaborare - done
+    -> Design de abra cu link-uri indreapta la youtube, facebook si instagram
+-> Material (de scris)
+    -> Sectiuniile
+        -> Flexibilitate (scris + facut logoul cu femeia care face spagatu)
+        -> Health and lifestyle (scris + facut logo cu balanta)
+        -> Street workout (scris)
+        -> Gym workout (scris + facut logoul cu tipu care impinge bara)
+    -> aboutMe --to-> About Me and Project
+        -> Experienta ca antrenor personal: Ce ai invatat la cursuri
+        -> Masaj: detalii despre ce ai facut la masaj
+        -> Cercetare individuala si pasiune: de ce te-ai interesat, ce ai invatat and so on
+        -> Interese: Ce ti s-a parut interesant, you know, poti zice aici ca ti-au placut antrenamentele shaolinilor and so on
+            si ce aplici din ele... orcum sectiunea asta este pentru cine vrea sa mai atarne pe site
+-> Functionalities (todo tehnice)
+    -> Facut sistemul de articole
+    -> Facut sistemul de videouri
+    -> Facut sistemul de commenturi prin token
+-> Marketing
+    -> Gasit nume pentru proiect
+    -> Facut pagina de facebook
+    -> Facut pagina de instagram
+    -> Facut twiter (maybe, idk)
+    -> Facut youtube
+    -> Facut patreon
+    -> Gandit la o metoda de monetizare
+TODO: 
+-> UI/UX (gabi)
+    -> Adaptat pagina pentru mobil
+-> Material (de scris)
+    -> Sectiuniile
+        -> Flexibilitate (scris + facut logoul cu femeia care face spagatu)
+        -> Health and lifestyle (scris + facut logo cu balanta)
+        -> Street workout (scris)
+        -> Gym workout (scris + facut logoul cu tipu care impinge bara)
+    -> aboutMe --to-> About Me and Project
+        -> Experienta ca antrenor personal: Ce ai invatat la cursuri
+        -> Masaj: detalii despre ce ai facut la masaj
+        -> Cercetare individuala si pasiune: de ce te-ai interesat, ce ai invatat and so on
+        -> Interese: Ce ti s-a parut interesant, you know, poti zice aici ca ti-au placut antrenamentele shaolinilor and so on
+            si ce aplici din ele... orcum sectiunea asta este pentru cine vrea sa mai atarne pe site
+-> Functionalities (todo tehnice)
+    -> Facut sistemul de articole
+    -> Facut sistemul de videouri
+    -> Facut sistemul de commenturi prin token
+-> Marketing
+    -> Gasit nume pentru proiect
+    -> Facut pagina de facebook
+    -> Facut pagina de instagram
+    -> Facut twiter (maybe, idk)
+    -> Facut youtube
+    -> Facut patreon
+    -> Gandit la o metoda de monetizare
+```

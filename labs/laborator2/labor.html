@@ -1,0 +1,147 @@
+<html>
+
+<head>
+    <title>Laborator 2</title>
+</head>
+
+<body style="margin: 50px;">
+    <h1>Laborator 2</h1>
+    <h2>Tag-urile de tip form</h2>
+    <p>Are rolul de a contine informatii introduse de utilizator. Acestea mai departe vor fi trimise la server. (vom
+        vedea in laboratoarele viitoare si cum)</p>
+    <p>Contine taguri de tip input. Tagurile de tip input primesc diferite tipuri de informatii: email, text, parola.
+    </p>
+    <p>In functie de tipul de informatie inputul se va comporta diferit. De exemplu, tag-ul de tip password o sa
+        inlocuiasca, in vizual, caracterele cu "*", tagurile de tip
+        date vor deschide un calendar pentru a introduce odata, iar cele de tip email nu vor permite decat introducerea
+        unui email.
+    </p>
+    <p>Probabil in laboratorul anterior ati vazut ca fiecare tag poate avea propietati/atribute, de exemplu: id, o
+        propietate unica care identifica tagul respectiv</p>
+    <xmp>
+        <h1 id="id_titlu"></h1>
+    </xmp>
+    <p>Un tag de tip input are urmatoarele propietati caracteristice (mai importante): </p>
+    <ul>
+        <li>name: identificator unic la nivel de form. Dupa acest atribut, serverul care primeste form-ul o sa
+            identifice valoarea
+        </li>
+        <li>value: daca vrei sa definesti o valoare din default
+        </li>
+        <li>placeholder: o indicatie in background care poate da un indiciu utilizatorului despre ce ar trebuii sa scrie
+            inauntru
+        </li>
+    </ul>
+    <p>Cateva exemple: </p>
+    <xmp>
+        <form>
+            <h2>Login</h2>
+            <label>Username: </label><input name="username" type="text" placeholder="your username here" />
+            <label>Password: </label><input name="password" type="password" placeholder="your password" />
+            <input type="submit" /> // apasarea butonului submit
+        </form>
+    </xmp>
+    O sa arate ceva in genul:
+    <hr />
+    <form>
+        <h2>Login</h2>
+        <label>Username: </label><input name="username" type="text" placeholder="your username here" /><br>
+        <label>Password: </label><input name="password" type="password" placeholder="your password" /><br>
+        <input type="submit" />
+    </form>
+    <hr />
+    <h3>Realizati singuri formularul din imagine ; Intrebati unde va blocati. Puteti cauta pe w3school daca nu mai stiti
+        ceva:</h3>
+    <img src="form.png" />
+    <p>Rezolvare <a href="https://codepen.io/TapirdeaAlexandru/pen/OJVRjXr">aici</a></p>
+    <p>Gasiti <a href="https://www.w3schools.com/html/html_form_input_types.asp">aici</a> toate tipurile de inputuri</p>
+    <h2>CSS</h2>
+    <p>Este un limbaj folosit pentru stilizarea HTML-ului</p>
+    <p>Putem schimba culori, dimensiuni, sa ascundem elementele sau chiar sa facem un design diferit pentru telefon,
+        tableta, laptop, PC etc. (in functie de dimensiunea ecranului)</p>
+    <p>Se poate insera in 3 feluri intr-un fisier html</p>
+    <ul>
+        <li>Prin inline style pe fiecare element in parte</li>
+        <p> Stilul inline are ca dezavantaj faptul ca este greu de urmarit. Daca avem fisiere html cu sute de linii, o
+            sa ne fie foarte greu “sa mentinem codul pe termen lung”. De asemenea, daca vrem de exemplu ca toate
+            paragrafele sa fie scrie cu bold, trebuie sa aplicam aceeasi regula pe fiecare paragraph ( cod duplicat).
+            Cand ne hotaram ca vrem ca paragrafele sa fie cu italic in loc de bold, trebuie sa modificam iar in sute de
+            locuri.
+            <i>OBS2: La proiect nu veti avea voie sa folositi stil inline</i></p>
+        <xmp>
+            <h1 style="color:  red;"></h1>
+            <!-- Daca vrem sa aplicam 2 reguli diferite pentru acelasi element, le separam prin ; -->
+        </xmp>
+        <li>Prin tagul style </li>
+        <p>Este definit in HEAD, in interiorul unui tag style.</p>
+        <p>Avantajul fata de CSS-ul inline este ca daca vrem ca toate paragrafele sa fie de culoare rosie si cu font de
+            25px scriem regula o singura data, nu pentru fiecare paragraf in parte. Daca vrem sa schimbam culoare din
+            rosu in verde, atunci modificam intr-un singur loc. </p>
+        <xmp>
+
+            <head>
+                <style>
+                    /* toate tagurile de tip h1 vor avea propietatiile de css */
+                    h1 {
+                        color: red;
+                        font-size: 25px;
+                    }
+
+                    /* toate tagurile care au clasa "titlu" setata prin atribut vor avea propietatiile de css */
+                    .titlu {
+                        color: red;
+                        font-size: 25px;
+                    }
+
+                    /* toate tagurile care au clasa titlu setata prin atribut vor avea propietatiile de css */
+                    #titlu_principal {
+                        color: red;
+                        font-size: 25px;
+                    }
+                </style>
+            </head>
+        </xmp>
+        <li>Prin fisier extern: </li>
+        <xmp>
+
+            <head>
+                <link rel="stylesheet" type="text/css" href="mystyle.css">
+            </head>
+        </xmp>
+        <p> unde mystyle.css se afla in acelas loc cu fisierul tau html</p>
+        <p> Metoda de la style tag are ca dezavantaj faptul ca face fisierul html si mai lung. Daca avem 500 de
+            linii de HTML si mai adaugam inca 600 de linii de CSS o sa avem in final un fisier foarte mare. Mai mult,
+            daca vrem sa aplicam acelasi stil pentru fisierele index.html si home.html, trebuie sa-i dam COPY PASTE in
+            fiecare fisier. De acea avem nevoie de fisier extern </p>
+        <p>Trebuie sa:
+            <ul>
+                <li>Intram in Notepad++/ VSCode si sa creem un fisier index.html</li>
+                <li>Facem un fisier index.css (aveti grija sa nu-l salvati ca index.css.txt)</li>
+                <li>Mergem in index.html si adaugam in head o legatura catre fisierul nostru CSS</li>
+            </ul>
+        </p>
+        <p>Obs: rel si type raman mereu la fel. Se modifica doar atributul href cu “calea” catre fisierul nostru css.
+        </p>
+        <p>Obs: Dupa legarea fisierului extern de css inchideti si redeschideti browserul
+        </p>
+
+    </ul>
+    <h4>Practic, avem urmatoarea structura a unui fisier CSS</h4>
+    <xmp>
+        selector{
+        propietate_1:valoare1;
+        propietate_2:valoare2;
+        propietate_3:valoare3;
+        }
+    </xmp>
+    <h4>Cateva informatii utile despre css: </h4>
+    <p><a href="http://web.simmons.edu/~grovesd/comm244/notes/week3/css-colors">Cum functioneaza culorile?</a></p>
+    <p>Comentariile in CSS: /* ... */</p>
+    <p>Apare foarte des in interviuri/examene diferenta dintre 3 proprietati de CSS: </p>
+
+    <p>Uitati-va pe urmatorul <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel">exemplu</a> si
+        modificati pe rand valorile pentru margin, border si padding. Ce observati ?</p>
+    <p>Aplicati CSS extern pentru formularul creat la inceput. Trebuie sa folositi proprietatile: color, border, margin,
+        padding, background-color, font-weight, opacity, width, height</p>
+</body>
+</html>
